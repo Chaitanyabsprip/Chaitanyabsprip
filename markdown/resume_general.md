@@ -14,14 +14,14 @@ applications.
 ## Skills
 
 - **Programming Languages**: Golang, Dart, Lua, Javascript, Python, SQL, HTML & CSS,
-  Awk, POSIX Shell scripting, Make.
-- **Technologies**: Flutter, shell scripting, Postgres
+  Awk, POSIX Shell scripting.
+- **Technologies**: Flutter, shell scripting, Postgres, Make, Fastlane.
 - **Concepts**: Software design, Distributed Systems, Linux, Networking, Docker
 
 ## Experience
 
-- **Yocket** (Aug 2021 - Present)
-  Mobile Application Developer II
+- **Yocket** (Aug 2021 - Present)  
+  Mobile Application Developer II  
   Technologies used: Dart, Flutter, Make, Gitlab CI-CD, Bitbucket CI-CD,
   Fastlane, Sqlite, Firebase.
 
@@ -34,55 +34,42 @@ applications.
     and deploy times.
   - Held responsibility for mentoring and training an intern.
 
-- **Zellerfeld** (Nov 2022 - Jan 2023)
-  Mobile Application Developer (Android)
+- **Zellerfeld** (Nov 2022 - Jan 2023)  
+  Mobile Application Developer (Android)  
   Technologies Used: Kotlin, Jetpack Compose.
 
-  - Worked on 3d modelling using depth perception camera.
+  - Worked on 3d modeling using depth perception camera.
   - Implemented a relative positioning system to track movement of
     the phone in the _3-dimensional space_.
 
-- **Zargun ES** (Dec 2019 - May 2020)
-  Mobile Application Developer
+- **Zargun ES** (Dec 2019 - May 2020)  
+  Mobile Application Developer  
   Technologies Used: Dart, Flutter, MongoDB, Firebase.
   - Led a team in the development of a cross-platform mobile application as a
     part of IOT system using Flutter framework.
 
 ## Projects
 
-1. **Crimson**
-   Technologies Used: Flutter, Dart, Firebase Realtime Database, Firebase Auth
+- **Crimson**  
+  Technologies Used: Flutter, Dart, Firebase Realtime Database, Firebase Auth
 
-   Developing a cross-platform, menstrual cycle tracking mobile application in
-   association with The Period Society, Navi Mumbai. Additional to tracking the
-   menstrual cycle and providing general menstrual health tips, the application
-   allows the user to share their menstrual cycle information with their spouse
-   and other users. Flutter framework, Firebase.
+  Developing a cross-platform, menstrual cycle tracking mobile application in
+  association with The Period Society, Navi Mumbai. In addition to tracking the
+  menstrual cycle and providing general menstrual health tips, the application
+  allows the user to share their menstrual cycle information with their spouse
+  and other users. Flutter framework, Firebase.
 
-2. **Flivver**
-   Technologies Used: Dart
+- **Flivver**  
+  Technologies Used: Dart
 
-   Developed and published a dart package that allows the user to create custom
-   events and callbacks.
+  Developed and published a flutter and dart package that allows the user to
+  create custom events and callbacks.
 
-3. **Semantic Search**
-   Technologies Used: Python, Flask, Lua
-
-4. **Present.nvim**
-   Technologies Used: Lua, neovim
-
-5. **Automated Whatsapp Messaging**
-   Technologies Used: Python, Selenium
-
-6. **B. Tech Project**
-   Technologies Used: Python, Jupyter Notebooks, Keras, Tensorflow.
-
-7. **MinWal**
-   Technologies Used:
-
-8. Neovim
-9. Docker Workspace
-10.
+- **Semantic Search**  
+  Technologies Used: Python, Flask, Lua
+  Developed a semantic search engine for my note-base and accompanying neovim
+  plugin. The plugin gives me the ability to search my note base directly from
+  my editor.
 
 ## Education
 
