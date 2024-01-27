@@ -3,21 +3,19 @@
 📞 [9999999999](tel:9999999999)
 📧 [hello@chaitanyas.dev](mailto:hello@chaitanyas.dev)
 🔗 [github.com/Chaitanyabsprip](https://github.com/Chaitanyabsprip)
-🔗 [LinkedIn/Chaitanyabsprip](https://linkedin.com/in/chaitanyabsprip)
+🔗 [linkedIn/Chaitanyabsprip](https://linkedin.com/in/chaitanyabsprip)
 
-Dedicated and skilled software developer with 2 years of professional
-experience in mobile development and some experience in backend development from
-numerous personal projects. Committed to writing, readable, maintainable code
-and continually expanding my skill set. Deeply academic about learning new
-technologies and concepts.
+I am a mobile application developer. Graduated with a B. Tech degree in the
+Electronics and Telecommunication branch. I am academically inclined and am
+eager to learn new concepts, technologies and meta. Experienced in designing,
+developing and publishing Android and iOS applications.
 
 ## Skills
 
 - **Programming Languages**: Golang, Dart, Lua, Javascript, Python, SQL, HTML & CSS,
-  Awk.
+  Awk, POSIX Shell scripting.
 - **Technologies**: Flutter, shell scripting, Postgres, Make, Fastlane, Linux,
   Docker.
-- **Tool**: Neovim, Git, POSIX Shell scripting
 - **Concepts**: Software design, Distributed Systems, Networking.
 
 ## Experience
