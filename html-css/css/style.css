@@ -1,0 +1,70 @@
+* {
+    font-family: nunito;
+}
+
+a {
+    text-decoration: underline;
+    color: #1155cc;
+}
+
+body {
+    margin: 40px 20%;
+    text-align: justify;
+    /*background: #0f111b;*/
+    /*color: #e0def4;*/
+}
+
+h1 {
+    color: #6d9eeb;
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #073763;
+}
+
+.contact li {
+    display: inline;
+    font-size: 12px;
+}
+
+.intro {
+    margin: 16px 0px;
+}
+
+.section {
+    margin: 16px 0px;
+}
+
+.section ul,
+.section p {
+    padding-left: 40px;
+}
+
+#experience ul li {
+    margin-left: 40px;
+}
+
+.experience {
+    padding: 8px 0;
+}
+
+#skills li {
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+#projects li {
+    padding: 8px 0;
+}
