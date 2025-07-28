@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "bun run src/index.tsx",
+    "build": "bun build",
+    "test": "bun test",
+    "lint": "eslint .",
+    "pdf": "node src/resume.tsx"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^4.3.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.1.8",
+    "js-yaml": "^4.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
