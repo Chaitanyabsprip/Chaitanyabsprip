@@ -64,7 +64,7 @@ const MyDocument = () => (
         linkedin={data.contact.linkedin}
         github={data.contact.github}
       />
-      <Intro content="Software developer with 4 years of hands-on experience building scalable mobile and backend systems across diverse domains. Passionate about writing readable, maintainable code, actively maintaining open source projects. Known for taking ownership of complex projects and driving impactful results independently and in cross-functional teams." />
+      <Intro content={data.summary} />
       <Skills skills={data.skills} />
       <Experience experiences={data.experiences} />
       <Projects

@@ -3,11 +3,11 @@ import { StyleSheet, Font } from "@react-pdf/renderer";
 Font.register({
   family: "Century Gothic",
   fonts: [
-    { src: "public/centurygothic.ttf", fontWeight: "normal" },
-    { src: "public/centurygothic-bold.ttf", fontWeight: "bold" },
-    { src: "public/centurygothic-italic.ttf", fontStyle: "italic" },
+    { src: "public/fonts/centurygothic.ttf", fontWeight: "normal" },
+    { src: "public/fonts/centurygothic-bold.ttf", fontWeight: "bold" },
+    { src: "public/fonts/centurygothic-italic.ttf", fontStyle: "italic" },
     {
-      src: "public/centurygothic-bolditalic.ttf",
+      src: "public/fonts/centurygothic-bolditalic.ttf",
       fontWeight: "bold",
       fontStyle: "italic",
     },

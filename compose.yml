@@ -1,0 +1,10 @@
+---
+services:
+  pdf-generator:
+    build: ./pdf-generator/
+    ports:
+      - 12012:12012
+    environment:
+      - PORT=12012
+    volumes:
+      - ./shared:/app/shared
