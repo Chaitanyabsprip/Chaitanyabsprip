@@ -9,3 +9,5 @@ go.sum
 
 package-lock.json
 .air.toml
+
+static/css/main.css

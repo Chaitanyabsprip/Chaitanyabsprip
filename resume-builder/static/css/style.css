@@ -1,5 +1,44 @@
 @import "tailwindcss";
 
+@theme {
+  --color-vulcan: oklch(18.004% 0.01884 274.65);
+  --color-vulcan-50: oklch(78.422% 0.03867 277.17);
+  --color-vulcan-100: oklch(74.922% 0.04526 275.24);
+  --color-vulcan-200: oklch(67.371% 0.06016 274.8);
+  --color-vulcan-300: oklch(59.672% 0.0761 274.14);
+  --color-vulcan-400: oklch(52.325% 0.08504 273.41);
+  --color-vulcan-500: oklch(46.047% 0.07291 273.45);
+  --color-vulcan-600: oklch(39.604% 0.0619 273.69);
+  --color-vulcan-700: oklch(32.828% 0.04867 273.85);
+  --color-vulcan-800: oklch(25.683% 0.0345 274.11);
+  --color-vulcan-900: oklch(18.004% 0.01884 274.65);
+  --color-vulcan-950: oklch(11.703% 0.00886 284.95);
+
+  --color-bunker: oklch(13.572% 0.01153 274.62);
+  --color-bunker-50: oklch(77.856% 0.04459 276.68);
+  --color-bunker-100: oklch(74.151% 0.05252 276.41);
+  --color-bunker-200: oklch(66.566% 0.06938 274.86);
+  --color-bunker-300: oklch(58.669% 0.08695 274.9);
+  --color-bunker-400: oklch(51.387% 0.09769 274.04);
+  --color-bunker-500: oklch(45.018% 0.08443 274.12);
+  --color-bunker-600: oklch(38.784% 0.07047 274.28);
+  --color-bunker-700: oklch(32.229% 0.05409 274.36);
+  --color-bunker-800: oklch(25.039% 0.04029 274.89);
+  --color-bunker-900: oklch(17.61% 0.02099 275.31);
+  --color-bunker-950: oklch(13.572% 0.01153 274.62);
+
+  --color-surface: #0f111a;
+  --color-surface-1: #1b1c25;
+  --color-surface-2: #1f212a;
+  --color-surface-3: #22242c;
+  --color-surface-4: #24262e;
+  --color-surface-6: #292b33;
+  --color-surface-8: #2b2d35;
+  --color-surface-12: #30323a;
+  --color-surface-16: #33343c;
+  --color-surface-24: #35373e;
+}
+
 @font-face {
   font-family: "Century Gothic";
   src: url("../fonts/CenturyGothic.ttf") format("truetype");
