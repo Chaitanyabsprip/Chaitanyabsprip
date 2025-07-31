@@ -1,0 +1,11 @@
+bun.lock
+bun.lockb
+node_modules/
+dist/
+
+tmp/
+
+go.sum
+
+package-lock.json
+.air.toml
