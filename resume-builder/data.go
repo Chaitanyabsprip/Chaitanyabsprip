@@ -16,7 +16,7 @@ type Education struct {
 
 type Skill struct {
 	Name  string
-	items []string
+	Items []string
 }
 
 type Technology struct {
