@@ -7,25 +7,27 @@
     <title>Resume builder</title>
     <link href="static/css/main.css" rel="stylesheet" />
     <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.min.js"
       integrity="sha384-Akqfrbj/HpNVo8k11SXBb6TlBWmXXlYQrCSqEWmyKJe+hDm3Z/B2WVG4smwBkRVm"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="bg-bunker-900">
+  <body class="bg-surface">
     <header>
-      <div
-        class="container mx-auto mt-16 pb-4 mb-8 max-w-5xl border-b border-vulcan-700"
-      >
-        <h1 class="text-3xl text-vulcan-400 font-bold htmx">Resume Builder</h1>
+      <div class="container mx-auto mt-16 pb-4 pl-4 max-w-5xl">
+        <h1 class="text-3xl text-vulcan-100 font-bold htmx">Resume Builder</h1>
       </div>
     </header>
     <main>
       <div class="grid grid-cols-1 gap-6">
         <div
-          class="mx-auto w-full max-w-5xl bg-vulcan-900 p-8 h-screen rounded-t-xl"
+          class="mx-auto w-full max-w-5xl bg-surface-1 p-8 h-screen rounded-t-xl"
         >
-          {{ template "contact" . }}
+          {{ template "contact" . }} {{ template "skills" . }}
         </div>
       </div>
     </main>
