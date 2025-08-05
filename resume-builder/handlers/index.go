@@ -18,14 +18,12 @@ func Index(c *fiber.Ctx) error {
 	if c.Path() != "/" || c.Method() != http.MethodGet {
 		return c.Status(http.StatusNotFound).SendString("Not Found")
 	}
-
 	data, err := data.GetResumeData()
 	if err != nil {
 		log.Printf("Error loading resume data: %v", err)
 		return c.Status(http.StatusInternalServerError).
 			SendString("Internal server error")
 	}
-
 	return c.Render("root", data)
 }
 
