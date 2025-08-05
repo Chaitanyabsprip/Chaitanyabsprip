@@ -1,0 +1,11 @@
+{{ define "experiences" }}
+<div>
+  <h2 class="text-2xl text-vulcan-200 pt-4 pb-4">Experiences</h2>
+  {{ range . }}
+  <div class="mb-4">
+    {{ template "checkable" .Entity }}
+    <div class="pl-8"></div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,38 @@
+{{ define "projects" }}
+<div>
+  <h2 class="text-2xl text-vulcan-200 pt-4 pb-4">Projects</h2>
+  {{ range . }}
+  <div class="mb-4">
+    <div class="flex items-center">
+      <input type="checkbox" />
+      <label class="text-gray-200 pl-4">{{ .Name }}{{ if .Link }} - <a href="{{ .Link }}" class="text-blue-500 hover:underline">Link</a>{{ end }}</label>
+    </div>
+    <div class="pl-8">
+      <p>Role: {{ .Role }}</p>
+      <div class="mt-2">
+        <p class="font-semibold">Details:</p>
+        <ul class="list-disc pl-4">
+          {{ range .Details }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ if .Technologies.Languages }}
+      <div class="mt-2">
+        <p class="font-semibold">Technologies:</p>
+        {{ if .Technologies.Languages }}
+        <p>Languages: {{ join .Technologies.Languages ", " }}</p>
+        {{ end }}
+        {{ if .Technologies.Frameworks }}
+        <p>Frameworks: {{ join .Technologies.Frameworks ", " }}</p>
+        {{ end }}
+        {{ if .Technologies.Concepts }}
+        <p>Concepts: {{ join .Technologies.Concepts ", " }}</p>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

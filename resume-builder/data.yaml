@@ -1,0 +1,297 @@
+---
+name: Chaitanya Sharma
+contact:
+  mobile: "+919999999999"
+  github: https://github.com/Chaitanyabsprip
+  linkedin: https://linkedin.com/Chaitanyabsprip
+  email: hello@chaitanyas.dev
+summary: |
+  Software developer with 4 years of hands-on experience building scalable
+  mobile and backend systems across diverse domains. Passionate about writing
+  readable, maintainable code, actively maintaining open source projects. Known
+  for taking ownership of complex projects and driving impactful results
+  independently and in cross-functional teams.
+education:
+  - entity: Dwarkadas J. Sanghvi College of Engineering, Mumbai University
+    credential: Bachelor of Engineering
+    major: Electronics and Telecommunications
+    score: 7.2 CGPA
+    start: August, 2017
+    end: June 2021
+
+  - entity: Lilavatibai Podar High School
+    credential: 10th
+    score: 86%
+    end: 2015
+skills:
+  - name: Programming Languages
+    items:
+      - Bash
+      - C
+      - Dart
+      - Golang
+      - HTML & CSS
+      - Javascript
+      - Kotlin
+      - Lua
+      - POSIX Shell Scripting
+      - Python
+      - SQL
+      - Typescript
+
+  - name: Frameworks & Technologies
+    items:
+      - Android
+      - C-go
+      - Distributed Systems
+      - FastAPI
+      - Fastlane
+      - Firebase
+      - Flutter
+      - GNU Make
+      - Gitlab & Bitbucket Pipelines
+      - Hasura
+      - Jetpack Compose
+      - Linux
+      - MongoDB
+      - Nest.js
+      - Node.js
+      - PostgreSQL
+
+  - name: Systems and Development
+    items:
+      - Linux/UNIX Systems Architecture
+      - System Software Design
+      - Terminal UI (TUI) Specialization
+      - CLI Development & Optimization
+      - Multi-core Asynchronous Programming
+
+  - name: Data and Automation
+    items:
+      - Scripted Automation and Orchestration
+      - Apache Airflow
+      - Enterprise Data Management
+      - Structured Configuration Management
+      - CI/CD Pipelines
+
+  - name: Practices and Engineering
+    items:
+      - Site Reliability Engineering (SRE)
+      - Agile Development Practices
+      - Open Source Project Maintenance
+      - Network Protocol API Design
+projects:
+  - name: Zellerfeld, Mobile App
+    role: Mobile App Developer (Android)
+    details:
+      - Worked in an international remote team on a 3D modeling application
+        using a depth perception camera.
+      - Experimented with a relative positioning system to track movement of the
+        mobile in 3-dimensional space.
+    technologies:
+      languages:
+        - Kotlin
+      frameworks:
+        - Jetpack Compose
+        - Android
+      concepts:
+        - Signal Processing
+
+  - name: Fastaction.nvim
+    link: https://github.com/Chaitanyabsprip/fastaction.nvim
+    role: Inventor, Developer, Project Lead
+    details:
+      - Built a Neovim plugin with a popup UI for streamlining LSP code actions
+        using prioritized key mappings and configurable handlers.
+      - Used by 150+ developers; improves developer UX by reducing friction in
+        editor workflows.
+      - Implements only a general purpose popup UI multiselect and leverages
+        that to enhanve LSP code action UX.
+    technologies:
+      languages:
+        - Lua
+      frameworks:
+        - Neovim
+      concepts:
+        - Language Server Protocol
+        - Neovim plugin development
+
+  - name: Bonzai CLI Framework
+    link: https://github.com/rwrob/bonzai
+    role: Core Contributor
+    details:
+      - Worked closely with the creator of Bonzai to make core architectural and
+        design decisions for a modular CLI framework (~220 stars) in Go.
+      - Contributed to long-term structural planning, usability patterns, and
+        feature direction for composable command trees and all batteries
+        included CLI ecosystems.
+    technologies:
+      languages:
+        - Go
+      concepts:
+        - Command-line
+
+  - name: Present.nvim
+    link: https://github.com/Chaitanyabsprip/present.nvim
+    role: Inventor, Developer, Project Lead
+    details:
+      - Built a Markdown-powered terminal slide deck system in Lua, optimized
+        for dev talks and TUI presentations; supports dynamic rendering and
+        kitty(terminal-emulator) font zoom.
+      - Enables seamless presentations within the terminal for dev talks and
+        walkthroughs; adopted by the (Neo)Vim community with 150+ stars.
+    technologies:
+      languages:
+        - Lua
+      frameworks:
+        - Neovim
+      concepts:
+        - Markdown
+        - TUI
+
+  - name: Tmux-harpoon
+    link: https://github.com/Chaitanyabsprip/tmux-harpoon
+    role: Inventor, Developer, Project Lead
+    details:
+      - Developed a CLI and TPM plugin to streamline Tmux navigation using fuzzy
+        search; significantly reduced developer context-switching and increased
+        terminal workflow speed.
+      - Simplifies complex multi-session workflows for terminal users;
+        streamlines context-switching and accelerates dev productivity.
+    technologies:
+      languages:
+        - Bash
+      frameworks:
+        - Tmux
+      concepts:
+        - Shell Scripting
+        - CLI UX
+        - Dev-x
+
+  - name: Cartographer
+    link: https://github.com/Chaitanyabsprip/cartographer
+    role: Inventor, Developer, Project Lead
+    details:
+      - Created a semantic search engine with FastAPI and Neovim integration to
+        enable intelligent, indexed search across personal knowledge bases.
+    technologies:
+      languages:
+        - Python
+        - Lua
+        - Golang
+        - C
+      frameworks:
+        - FastAPI
+        - Protobufs
+        - Cpython
+        - C-go
+      concepts:
+        - Semantic Search
+
+  - name: Flivver
+    link: https://pub.dev/packages/flivver
+    role: Inventor, Developer, Project Lead
+    details:
+      - Published a Flutter package enabling structured custom event and
+        callback handling in UI flows; used by multiple apps for decoupled
+        interaction logic.
+    technologies:
+      languages:
+        - Dart
+      frameworks:
+        - Flutter
+
+  - name: Jsonext
+    link: https://pub.dev/packages/jsonext
+    role: Inventor, Developer, Project Lead
+    details:
+      - A pragmatic and sleek solution as a package for json handling in dart
+        and flutter applications.
+    technologies:
+      languages:
+        - Dart
+      frameworks:
+        - Flutter
+      concepts:
+        - JSON Processing
+experiences:
+  - entity: Zargun ES
+    start: Dec 2019
+    end: May 2021
+    role: Mobile Application Developer Intern
+    technologies:
+      - Dart
+      - Flutter
+      - MongoDB
+      - Firebase
+    details:
+      - Led development of a cross-platform IoT mobile application using
+        Flutter; collaborated with hardware and server teams to ensure seamless
+        local network communication.
+      - The application communicated with other peer devices and a server on
+        the local network.
+
+  - entity: Yocket
+    start: Aug 2021
+    end: Jan 2024
+    role: Mobile Application Developer II
+    technologies:
+      - Dart
+      - Flutter
+      - Make
+      - Gitlab CI-CD
+      - Bitbucket CI-CD
+      - Fastlane
+      - Sqlite
+      - Firebase
+      - GraphQL
+      - Hasura
+    details:
+      - Implemented realtime chat functionality which resulted in 2x increase in
+        user-retention and engagement. Reduced Initial load time of the chat
+        from 2s to 0 by re-architecting the code to use asynchronous loading.
+        Decreased messages load time by 60%.
+      - Collaborated with backend engineers, product managers, and designers to
+        ship high-impact features, often working with incomplete specs to
+        deliver on aggressive timelines.
+      - Initiated and executed independent product experiments targeting TOFu to
+        MOFu conversions, resulting in measurable uptick in qualified leads and
+        contributing to revenue conversion.
+      - Added performance optimizations for fluid user interaction. App startup
+        time reduced from 4-6s to 400-500ms.
+      - Implemented a deployment pipeline which resulted in a 8x reduction in
+        build times.
+      - Held responsibility for mentoring and training an intern.
+
+  - entity: SolarSquare
+    start: Feb 2024
+    end: Present
+    role: Full Stack Developer II
+    technologies:
+      - Python
+      - Nest.js
+      - Javascript
+      - TypeScript
+      - Node.js
+      - PostgreSQL
+      - Dart
+      - Flutter
+      - Apache Airflow
+      - MongoDB
+      - Firebase
+      - AWS (S3, Batch)
+    details:
+      - Lead the migration of inverter infrastructure from MongoDB to Postgres,
+        involving schema redesign, data restructuring, and coordination across
+        backend services. Enabling simplification and performance optimization
+        of downstream pipelines, including reducing a long-running cron job from
+        1+ hours to ~10 minutes.
+      - Sole developer on a critical Airflow-based ETL repository, optimizing
+        multiple long-running Python pipelines, including a Mongo-to-Postgres
+        migration and inverter generation data fetch jobs by introducing
+        batching, profiling memory usage, and rewriting inefficient logic,
+        resulting in reliable execution and a 10× speedup.
+      - Engineered a PDF generation system to programmatically create dynamic,
+        stylized quotations from structured input data.
+      - Optimized the WhatsApp and Push notification system, reducing response time from
+        2+ minutes to sub-second latencies.

@@ -2,19 +2,20 @@
 <div>
   <h2 class="text-2xl text-vulcan-200 pt-4 pb-4">Contact Information</h2>
   <div>
-    <input type="checkbox" /><label class="pl-4 text-gray-200">Name</label>
+    <input type="checkbox" name="mobile" />
+    <label class="text-gray-200 pl-4">Mobile: {{ .Mobile }}</label>
   </div>
   <div>
-    <input type="checkbox" /><label class="pl-4 text-gray-200">Phone</label>
+    <input type="checkbox" name="github" />
+    <label class="text-gray-200 pl-4">GitHub: {{ .Github }}</label>
   </div>
   <div>
-    <input type="checkbox" /><label class="pl-4 text-gray-200">Email</label>
+    <input type="checkbox" name="linkedin" />
+    <label class="text-gray-200 pl-4">LinkedIn: {{ .Linkedin }}</label>
   </div>
   <div>
-    <input type="checkbox" /><label class="pl-4 text-gray-200">Github</label>
-  </div>
-  <div>
-    <input type="checkbox" /><label class="pl-4 text-gray-200">LinkedIn</label>
+    <input type="checkbox" name="email" />
+    <label class="text-gray-200 pl-4">Email: {{ .Email }}</label>
   </div>
 </div>
 {{ end }}

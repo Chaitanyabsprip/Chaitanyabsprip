@@ -24,10 +24,23 @@
     </header>
     <main>
       <div class="grid grid-cols-1 gap-6">
-        <div
-          class="mx-auto w-full max-w-5xl bg-surface-1 p-8 h-screen rounded-t-xl"
-        >
-          {{ template "contact" . }} {{ template "skills" . }}
+        <div class="mx-auto w-full max-w-5xl bg-surface-1 p-8 rounded-t-xl">
+          <form hx-post="/generate-pdf" hx-swap="none">
+            <noop>{{ template "contact" .Contact }}</noop>
+            <noop>{{ template "skills" .Skills }}</noop>
+            <noop>{{ template "experiences" .Experiences }}</noop>
+            <noop>{{ template "projects" .Projects }}</noop>
+            <noop>{{ template "educations" .Education }}</noop>
+            <div class="flex justify-end mt-8">
+              <button
+                type="submit"
+                value="Bulk Update"
+                class="bg-vulcan-100 text-white px-4 py-2 rounded hover:bg-vulcan-200 transition-colors"
+              >
+                Save Resume
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </main>
