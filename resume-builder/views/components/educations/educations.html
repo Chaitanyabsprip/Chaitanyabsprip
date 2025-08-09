@@ -1,14 +1,13 @@
 {{ define "educations" }}
-<div>
+<div class="text-gray-200">
   <h2 class="text-2xl text-vulcan-200 pt-4 pb-4">Education</h2>
   {{ range . }}
   <div class="mb-4">
-    <div class="flex items-center">
-      <input type="checkbox" />
-      <label class="text-gray-200 pl-4">{{ .Entity }} - {{ .Credential }}</label>
-    </div>
-    <div class="pl-8">
-      {{ if .Major }}<p>Major: {{ .Major }}</p>{{ end }}
+    {{ template "checkable" (printf "%s - %s" .Entity .Credential) }}
+    <div class="pl-10">
+      {{ if .Major }}
+      <p>Major: {{ .Major }}</p>
+      {{ end }}
       <p>Score: {{ .Score }}</p>
       <p>{{ if .Start }}{{ .Start }} - {{ end }}{{ .End }}</p>
     </div>

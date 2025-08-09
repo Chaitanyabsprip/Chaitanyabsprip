@@ -1,21 +1,9 @@
 {{ define "contact" }}
 <div>
   <h2 class="text-2xl text-vulcan-200 pt-4 pb-4">Contact Information</h2>
-  <div>
-    <input type="checkbox" name="mobile" />
-    <label class="text-gray-200 pl-4">Mobile: {{ .Mobile }}</label>
-  </div>
-  <div>
-    <input type="checkbox" name="github" />
-    <label class="text-gray-200 pl-4">GitHub: {{ .Github }}</label>
-  </div>
-  <div>
-    <input type="checkbox" name="linkedin" />
-    <label class="text-gray-200 pl-4">LinkedIn: {{ .Linkedin }}</label>
-  </div>
-  <div>
-    <input type="checkbox" name="email" />
-    <label class="text-gray-200 pl-4">Email: {{ .Email }}</label>
-  </div>
+  <noop> {{ template "checkable" (printf "Mobile: %s" .Mobile) }} </noop>
+  <noop>{{ template "checkable" (printf "GitHub: %s" .Github) }}</noop>
+  <noop>{{ template "checkable" (printf "LinkedIn: %s" .Linkedin) }}</noop>
+  <noop>{{ template "checkable" (printf "Email: %s" .Email) }}</noop>
 </div>
 {{ end }}
