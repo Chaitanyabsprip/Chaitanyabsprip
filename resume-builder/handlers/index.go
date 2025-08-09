@@ -2,8 +2,6 @@
 package handlers
 
 import (
-	"fmt"
-	"html/template"
 	"log"
 	"net/http"
 
@@ -11,8 +9,6 @@ import (
 
 	"github.com/Chaitanyabsprip/resume-builder/data"
 )
-
-var tmpl *template.Template
 
 func Index(c *fiber.Ctx) error {
 	if c.Path() != "/" || c.Method() != http.MethodGet {
@@ -31,7 +27,11 @@ func GeneratePdf(c *fiber.Ctx) error {
 	if c.Path() != "/generate-pdf" || c.Method() != http.MethodPost {
 		return c.Status(http.StatusNotFound).SendString("Not Found")
 	}
-	fmt.Printf("%v\n", string(c.Body()))
+	formData := make(map[string]bool)
+	for key, value := range c.Request().PostArgs().All() {
+		formData[string(key)] = string(value) == "on"
+	}
+	log.Printf("%v\n", formData)
 	return c.Status(http.StatusOK).
 		SendString("PDF generated successfully")
 }
