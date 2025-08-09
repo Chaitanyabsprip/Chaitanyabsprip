@@ -4,7 +4,9 @@
   {{ range . }}
   <div class="mb-4">
     <div class="flex">
-      <span class="font-bold">{{ template "checkable" .Entity }} </span>
+      <span class="font-bold">
+        {{ template "checkable" dict "Section" "experience" "Item" .Entity }}
+      </span>
       <span class="text-gray-200">
         ({{ .Start }} - {{ .End }}): {{ .Role }}
       </span>
@@ -12,7 +14,8 @@
     <div class="pl-8">
       <div class="text-gray-200 italic">{{ join .Technologies ", " }}</div>
       <div class="pl-4 mt-2">
-        {{ range .Details }} {{ template "checkable" . }} {{ end }}
+        {{ range .Details }} {{ template "checkable" dict "Section" "experience"
+        "Item" . }} {{ end }}
       </div>
     </div>
   </div>

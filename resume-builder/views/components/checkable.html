@@ -1,8 +1,10 @@
 {{ define "checkable" }}
 <div class="flex items-start">
-  <div class="pt-1 pl-2"><input type="checkbox" name="{{ . }}" /></div>
+  <div class="pt-1 pl-2">
+    <input type="checkbox" name="{{ .Section }}__{{ .Item }}" />
+  </div>
   <div class="pl-4 pr-2">
-    <label class="text-gray-200">{{ . }}</label>
+    <label class="text-gray-200">{{ .Item }}</label>
   </div>
 </div>
 {{ end }}

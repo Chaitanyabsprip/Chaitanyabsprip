@@ -3,11 +3,12 @@
   <h2 class="text-2xl text-vulcan-200 pt-4 pb-4">Skills</h2>
   {{ range . }}
   <div>
-    {{ template "checkable" .Name }}
+    {{ template "checkable" dict "Section" "skill" "Item" .Name }}
     <div
       class="pl-8 pt-2 pb-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2"
     >
-      {{ range .Items }} {{ template "checkable" . }} {{ end }}
+      {{ range .Items }} {{ template "checkable" dict "Section" "skill" "Item" .
+      }} {{ end }}
     </div>
   </div>
   {{ end }}

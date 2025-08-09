@@ -4,7 +4,8 @@
   {{ range . }}
   <div class="mb-4">
     <div class="flex items-start">
-      {{ template "checkable" .Name}} {{ if .Link }}
+      {{ template "checkable" dict "Section" "project" "Item" .Name}} {{ if
+      .Link }}
       <span>-&nbsp;</span>
       <a href="{{ .Link }}" class="text-blue-500 hover:underline">
         {{ .Link }}
