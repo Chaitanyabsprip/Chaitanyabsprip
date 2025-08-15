@@ -1,0 +1,29 @@
+---
+import '../styles/global.css'
+import BackgroundTitle from "../components/BackgroundTitle.astro";
+
+const { header = "", title = "" } = Astro.props as {
+header: string;
+title?: string;
+};
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{title || header}</title>
+</head>
+
+<body class="bg-white dark:bg-surface-950 text-fg-950 dark:text-fg-100">
+        {header &&
+        <BackgroundTitle text={header} />}
+        <main class="relative z-1 pl-16 pt-24 max-w-5xl">
+                <slot />
+        </main>
+        <div id="toast-root"></div>
+</body>
+
+</html>

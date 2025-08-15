@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --color-surface: oklch(13.572% 0.01153 274.62);
+  --color-surface-50: oklch(77.856% 0.04459 276.68);
+  --color-surface-100: oklch(74.151% 0.05252 276.41);
+  --color-surface-200: oklch(66.566% 0.06938 274.86);
+  --color-surface-300: oklch(58.669% 0.08695 274.9);
+  --color-surface-400: oklch(51.387% 0.09769 274.04);
+  --color-surface-500: oklch(45.018% 0.08443 274.12);
+  --color-surface-600: oklch(38.784% 0.07047 274.28);
+  --color-surface-700: oklch(32.229% 0.05409 274.36);
+  --color-surface-800: oklch(25.039% 0.04029 274.89);
+  --color-surface-900: oklch(17.61% 0.02099 275.31);
+  --color-surface-950: oklch(13.572% 0.01153 274.62);
+
+  --color-fg: oklch(90.879% 0.02985 289.97);
+  --color-fg-50: oklch(95.035% 0.01606 289.93);
+  --color-fg-100: oklch(90.879% 0.02985 289.97);
+  --color-fg-200: oklch(80.169% 0.06605 288.71);
+  --color-fg-300: oklch(69.358% 0.10609 287.05);
+  --color-fg-400: oklch(58.299% 0.14769 284.97);
+  --color-fg-500: oklch(47.794% 0.18627 280.68);
+  --color-fg-600: oklch(40.715% 0.16347 280.12);
+  --color-fg-700: oklch(33.815% 0.13115 280.69);
+  --color-fg-800: oklch(26.556% 0.09662 281.67);
+  --color-fg-900: oklch(18.806% 0.05844 283.78);
+  --color-fg-950: oklch(14.754% 0.03407 287.53);
+}
