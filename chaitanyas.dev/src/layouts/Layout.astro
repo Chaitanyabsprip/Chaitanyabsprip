@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css'
 import BackgroundTitle from "../components/BackgroundTitle.astro";
+import GithubMark from "../assets/github-mark.svg";
+import GithubMarkWhite from "../assets/github-mark-white.svg";
 
 const { header = "", title = "" } = Astro.props as {
 header: string;
@@ -17,13 +19,20 @@ title?: string;
         <title>{title || header}</title>
 </head>
 
-<body class="bg-white dark:bg-surface-950 text-fg-950 dark:text-fg-100">
+<body class="flex flex-col min-h-screen bg-white dark:bg-surface-950 text-fg-950 dark:text-fg-100">
         {header &&
         <BackgroundTitle text={header} />}
-        <main class="relative z-1 pl-16 pt-24 max-w-5xl">
+        <main class="flex-1 relative z-1 pl-16 pt-24 max-w-5xl">
                 <slot />
         </main>
         <div id="toast-root"></div>
+        <footer class="ml-12 mb-5">
+                <a href="https://github.com/chaitanyasharma/chaitanyas.dev" target="_blank" rel="noopener noreferrer"
+                        aria-label="View source on GitHub" class="inline-block">
+                        <GithubMark class="block dark:hidden w-6 h-6" />
+                        <GithubMarkWhite class="hidden dark:block w-6 h-6" />
+                </a>
+        </footer>
 </body>
 
 </html>
