@@ -1,6 +1,5 @@
 # Chaitanya Sharma
 
-[📞 9999999999](tel:9999999999)
 [📧 hello@chaitanyas.dev](mailto:hello@chaitanyas.dev)
 [🔗 gitHub/Chaitanyabsprip](https://github.com/Chaitanyabsprip)
 [🔗 linkedIn/Chaitanyabsprip](https://linkedin.com/in/chaitanyabsprip)
