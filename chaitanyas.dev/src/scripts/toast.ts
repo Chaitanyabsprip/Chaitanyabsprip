@@ -10,7 +10,8 @@ export function showToast(message: string) {
     transition-opacity duration-400 opacity-0";
   toast.setAttribute("aria-live", "polite");
   toast.innerText = message;
-  document.getElementById("toast-root").appendChild(toast);
+  const toastRoot = document.getElementById("toast-root");
+  if (toastRoot) toastRoot.appendChild(toast);
   setTimeout(() => {
     toast.style.opacity = "1";
   }, 10);
