@@ -5,7 +5,7 @@ export function showToast(message: string) {
   toast = document.createElement("div");
   toast.id = "theme-toast";
   toast.className =
-    "fixed right-[5%] translate-x-1/2 bottom-5 z-[1000] px-5 py-2 rounded-4xl \
+    "fixed right-[50%] sm:right-[5%] translate-x-1/2 bottom-5 z-[1000] px-5 py-2 rounded-4xl \
     bg-surface-800 text-white dark:bg-surface-200 dark:text-gray-900 shadow-lg \
     transition-opacity duration-400 opacity-0";
   toast.setAttribute("aria-live", "polite");
