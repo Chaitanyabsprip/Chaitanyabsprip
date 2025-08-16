@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import Contact from '../components/Contact.astro';
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
 import heroGIF from '../assets/programming-fire.gif';
@@ -10,19 +11,8 @@ import heroGIF from '../assets/programming-fire.gif';
         <Image src={heroGIF} alt="Programming GIF"
                 class="rounded-2xl mb-16 dark:border dark:border-gray-800 bg-gray-100 dark:bg-gray-950" />
         <div class="flex flex-col gap-2">
-                <div>
-                        <span class="text-md sm:text-xl">GitHub</span>
-                        <a class="text-sm sm:text-md underline"
-                                href="https://github.com/Chaitanyabsprip">Chaitanyabsprip</a>
-                </div>
-                <div>
-                        <span class="text-md sm:text-xl">LinkedIn</span>
-                        <a class="text-sm sm:text-md underline"
-                                href="https://www.linkedin.com/in/chaitanyabsprip">Chaitanya Sharma</a>
-                </div>
-                <div>
-                        <span class="text-md sm:text-xl">Email</span>
-                        <a class="text-sm sm:text-md underline" href="mailto:hello@chaitanyas.dev">Chaitanya Sharma</a>
-                </div>
+                <Contact name="GitHub" label="Chaitanyabsprip" link="https://github.com/Chaitanyabsprip" />
+                <Contact name="LinkedIn" label="Chaitanya Sharma" link="https://www.linkedin.com/in/chaitanyabsprip" />
+                <Contact name="Email" label="Chaitanya Sharma" link="mailto:hello@chaitanyas.dev" />
         </div>
 </Layout>
