@@ -1,8 +1,7 @@
 ---
 import '../styles/global.css'
 import BackgroundTitle from "../components/BackgroundTitle.astro";
-import GithubMark from "../assets/github-mark.svg";
-import GithubMarkWhite from "../assets/github-mark-white.svg";
+import GithubIcon from "../components/GitHubIcon.astro";
 
 const { header = "", title = "" } = Astro.props as {
 header: string;
@@ -20,19 +19,21 @@ title?: string;
         <title>{title || header}</title>
 </head>
 
-<body class="flex flex-col min-h-screen bg-white dark:bg-surface-950 text-fg-950 dark:text-fg-100">
+<body class="flex flex-col min-h-screen bg-white dark:bg-surface-950 text-fg-950 dark:text-fg-100 leading-relaxed">
         {header &&
         <BackgroundTitle text={header} />}
-        <main class="flex-1 relative z-1 mx-8 sm:mx-36 mt-12 sm:mt-24 max-w-5xl">
+        <main class="flex-1 relative z-1 mx-8 sm:mx-36 mt-12 sm:mt-40 max-w-[70ch]">
                 <slot />
         </main>
         <div id="toast-root"></div>
-        <footer class="ml-12 mb-5">
+        <footer class="ml-12 mb-5 flex flex-row items-baseline gap-4">
                 <a href="https://github.com/chaitanyasharma/chaitanyas.dev" target="_blank" rel="noopener noreferrer"
                         aria-label="View source on GitHub" class="inline-block">
-                        <GithubMark class="block dark:hidden w-6 h-6" />
-                        <GithubMarkWhite class="hidden dark:block w-6 h-6" />
+                        <GithubIcon />
                 </a>
+                <span class="text-gray-500">
+                        © {new Date().getFullYear()} Chaitanya Sharma | All rights reserved.
+                </span>
         </footer>
 </body>
 

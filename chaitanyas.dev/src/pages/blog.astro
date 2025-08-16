@@ -1,10 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
+import { getCollection } from 'astro:content';
+const allPosts = await getCollection('blog');
 ---
 
 <Layout header="BLOG" title="Blog">
         <Nav />
-        <p>
-        </p>
+        <div class="flex flex-col gap-2">
+                {allPosts.map((post) => post.id ? (
+                <a href={"/blog/" + post.id} class="sm:text-lg">
+                        <div class="underline hover:decoration-2">{post.data.title}</div>
+                        <div class="text-xs text-gray-400">{post.data.pubDate.toISOString().slice(0,10)}</div>
+                </a>
+                ) : null
+                )}
+        </div>
 </Layout>

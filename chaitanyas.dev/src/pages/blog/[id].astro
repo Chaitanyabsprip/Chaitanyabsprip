@@ -1,0 +1,19 @@
+---
+import { getEntry, getCollection, render } from 'astro:content';
+import PostLayout from '../../layouts/PostLayout.astro';
+
+export async function getStaticPaths() {
+const posts = await getCollection('blog');
+return posts.map(post => ({ params: { id: post.id } }));
+}
+
+const { id } = Astro.params;
+const post = await getEntry('blog', id);
+if (!post) throw new Error(`Post not found: ${id}`);
+const { Content } = await render(post);
+console.log('DEBUG post.data:', post.data);
+---
+
+<PostLayout {...post.data}>
+        <Content />
+</PostLayout>

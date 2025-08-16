@@ -5,5 +5,5 @@ const { name, link , label } = Astro.props as { name: string, link: string, labe
 
 <div>
         <span class="text-md sm:text-xl">{name}</span>
-        <a class="text-sm sm:text-md underline" href={link}>{label}</a>
+        <a class="text-sm sm:text-md underline hover:decoration-2" href={link}>{label}</a>
 </div>
