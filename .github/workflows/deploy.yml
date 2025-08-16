@@ -27,6 +27,7 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v4
         with:
+          path: ./chaitanyas.dev
           package-manager: npm
 
   deploy:
