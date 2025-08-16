@@ -1,0 +1,15 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getReadingTime } from "../scripts/reading_time";
+interface Props {
+post: CollectionEntry<'blog'>;
+        }
+        const { post } = Astro.props;
+        const readingTime = getReadingTime(post.body);
+        ---
+
+        <a href={"/blog/" + post.id} class="sm:text-lg">
+                <div class="underline hover:decoration-2">{post.data.title}</div>
+                <div class="text-xs text-gray-400">{post.data.pubDate.toISOString().slice(0,10)} • {readingTime}
+                </div>
+        </a>
