@@ -8,7 +8,7 @@ const {title, subtitle, pubDate, author, image} = Astro.props;
         <Nav />
         <h1 class="text-3xl font-bold mb-2">{title}</h1>
         <p><em>{subtitle}</em></p>
-        <p>{pubDate && pubDate.toString().slice(0,10)}</p>
+        <p>{pubDate && new Date(pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
         {author && <p>Written by: {author}</p>}
         {image && image.url && <img src={image.url} width="300" alt={image.alt} />}
         <Prose>
