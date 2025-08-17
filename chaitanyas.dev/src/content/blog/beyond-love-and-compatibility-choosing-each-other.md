@@ -1,7 +1,7 @@
 ---
 title: 'Beyond Love and Compatibility: Choosing Each Other'
-pubDate: 2025-03-06
 subtitle: 'The Power of Choice in Long-Term Relationships'
+pubDate: 2025-03-06
 ---
 
 
