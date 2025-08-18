@@ -21,7 +21,7 @@ const allPosts = (await getCollection("blog")).sort(
     {
       allPosts.map((post) =>
         post.id ? (
-          <a href={"/blog/" + post.id} class="sm:text-lg">
+          <a href={`/blog/${post.id}/`} class="sm:text-lg">
             <BlogPost post={post} />
           </a>
         ) : null,
