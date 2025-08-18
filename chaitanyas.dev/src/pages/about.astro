@@ -3,7 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 ---
 
-<Layout header="ABOUT" title="About" nameInTitle>
+<Layout
+  header="ABOUT"
+  title="About"
+  nameInTitle
+  description="Software engineer focused on optimization, architecture, and building efficient systems across fullstack development with Go, TypeScript, Python, and Flutter."
+  canonical={Astro.url.href}
+>
   <Nav />
   <div class="text-justify text-base sm:text-lg space-y-4">
     <p>

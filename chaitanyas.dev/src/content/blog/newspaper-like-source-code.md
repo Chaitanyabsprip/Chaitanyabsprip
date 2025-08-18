@@ -1,6 +1,7 @@
 ---
 title: "Newspaper like source code"
 subtitle: "Structure your file like a newspaper, but don't publish any news."
+description: "How applying the inverted pyramid style of journalism to code organization improves readability, maintainability, and understanding of software."
 pubDate: "2025-08-17"
 ---
 

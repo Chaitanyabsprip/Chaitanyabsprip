@@ -9,7 +9,13 @@ import GitHubIcon from "../components/GitHubIcon.astro";
 import EmailIcon from "../components/EmailIcon.astro";
 ---
 
-<Layout header="HOME" title="Home" nameInTitle>
+<Layout
+  header="HOME"
+  title="Home"
+  nameInTitle
+  description="Chaitanya Sharma is a Software Engineer specializing in full-stack development and technical writing."
+  canonical={Astro.url.href}
+>
   <Nav />
   <Image
     src={heroGIF}

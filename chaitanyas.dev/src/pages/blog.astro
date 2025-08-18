@@ -9,7 +9,13 @@ const allPosts = (await getCollection("blog")).sort(
 );
 ---
 
-<Layout header="BLOG" title="Blog" nameInTitle>
+<Layout
+  header="BLOG"
+  title="Blog"
+  nameInTitle
+  description="Technical writing and personal thoughts on software development, optimization, and programming philosophy."
+  canonical={Astro.url.href}
+>
   <Nav />
   <div class="flex flex-col gap-2">
     {

@@ -1,6 +1,7 @@
 ---
 title: "Beyond Love and Compatibility: Choosing Each Other"
 subtitle: "The Power of Choice in Long-Term Relationships"
+description: "Exploring how the conscious choice to stay committed is the foundation of lasting relationships, beyond the fluctuations of love and compatibility."
 pubDate: 2025-03-06
 ---
 

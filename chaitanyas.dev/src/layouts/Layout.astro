@@ -2,15 +2,24 @@
 import "../styles/global.css";
 import BackgroundTitle from "../components/BackgroundTitle.astro";
 import GithubIcon from "../components/GitHubIcon.astro";
+import { AstroSeo } from "@astrolib/seo";
 
 const {
   header = "",
   title = "",
   nameInTitle,
+  description,
+  canonical,
+  noindex,
+  nofollow,
 } = Astro.props as {
   header: string;
   title?: string;
   nameInTitle?: boolean;
+  description?: string;
+  canonical?: string;
+  noindex?: boolean;
+  nofollow?: boolean;
 };
 ---
 
@@ -20,7 +29,20 @@ const {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <title>{nameInTitle && "Chaitanya Sharma | "}{title || header}</title>
+    <AstroSeo
+      title={nameInTitle
+        ? `Chaitanya Sharma | ${title || header}`
+        : title || header}
+      {description}
+      {canonical}
+      {noindex}
+      {nofollow}
+    />
+    <style>
+      * {
+        font-display: swap;
+      }
+    </style>
   </head>
 
   <body
