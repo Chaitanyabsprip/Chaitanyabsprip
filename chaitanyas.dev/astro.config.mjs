@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig } from "astro/config";
-import purgecss from "astro-purgecss";
+// import purgecss from "astro-purgecss";
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -13,15 +13,15 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   integrations: [
-    purgecss({
-      extractors: [
-        {
-          extractor: (content) =>
-            content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [],
-          extensions: ["astro", "html"],
-        },
-      ],
-    }),
+    // purgecss({
+    //   extractors: [
+    //     {
+    //       extractor: (content) =>
+    //         content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [],
+    //       extensions: ["astro", "html"],
+    //     },
+    //   ],
+    // }),
     playformCompress(),
   ],
 });
