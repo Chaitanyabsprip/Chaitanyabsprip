@@ -5,7 +5,7 @@ import Prose from "../components/Prose.astro";
 const { title, subtitle, pubDate, author, image } = Astro.props;
 ---
 
-<Layout header="BLOG" pageTitle={title}>
+<Layout header="BLOG" {title}>
   <Nav />
   <h1 class="text-3xl font-bold mb-2">{title}</h1>
   <p><em>{subtitle}</em></p>
