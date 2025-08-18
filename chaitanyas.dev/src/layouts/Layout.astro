@@ -22,7 +22,7 @@ const { header = "", title = "" } = Astro.props as {
     class="flex flex-col min-h-screen bg-white dark:bg-surface-950 text-fg-950 dark:text-fg-100 leading-relaxed"
   >
     {header && <BackgroundTitle text={header} />}
-    <main class="flex-1 relative z-1 mx-8 sm:mx-36 mt-12 sm:mt-40 max-w-[70ch]">
+    <main class="flex-1 relative z-1 mx-8 sm:mx-36 my-12 sm:my-40 max-w-[70ch]">
       <slot />
     </main>
     <div id="toast-root"></div>
