@@ -30,25 +30,35 @@ const {
     <main
       class="flex-1 relative z-1
         mx-8 sm:mx-36
-        mt-12 sm:mt-40
+        mt-12 sm:mt-36
         mb-8 sm:mb-24
-        max-w-[70ch]"
+        max-w-[70ch]
+        leading-relaxed"
     >
       <slot />
     </main>
     <div id="toast-root"></div>
-    <footer class="ml-12 mb-5 flex flex-row items-baseline gap-4">
+    <footer
+      class="flex flex-row
+        items-center sm:items-baseline gap-4
+        justify-center sm:justify-start
+        mb-5 sm:ml-12"
+    >
       <a
-        href="https://github.com/chaitanyasharma/chaitanyas.dev"
+        href="https://github.com/Chaitanyabsprip/Chaitanyabsprip"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="View source on GitHub"
-        class="inline-block"
+        class="inline-block mt-1"
       >
         <GithubIcon />
       </a>
-      <span class="text-gray-500">
-        © {new Date().getFullYear()} Chaitanya Sharma | All rights reserved.
+      <span
+        class="flex flex-col sm:flex-row sm:gap-2 items-start text-gray-500 text-xs sm:text-md"
+      >
+        <span>© {new Date().getFullYear()} Chaitanya Sharma</span>
+        <span class="hidden sm:inline">|</span>
+        <span>All rights reserved.</span>
       </span>
     </footer>
   </body>
