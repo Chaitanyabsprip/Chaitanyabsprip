@@ -1,6 +1,5 @@
 ---
-import Email from "../assets/email.png";
-import { Image } from "astro:assets";
+import EmailSVG from "../assets/email.svg";
 
 interface Props {
   class?: string;
@@ -11,5 +10,5 @@ const { class: className = "", size = "w-6 h-6" } = Astro.props;
 ---
 
 <span class={`inline-block ${className} ${size}`}>
-  <Image src={Email} alt="email icon" />
+  <EmailSVG class={`fill-black dark:fill-white ${size}`} />
 </span>
