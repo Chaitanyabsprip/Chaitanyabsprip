@@ -1,17 +1,27 @@
 ---
-import Layout from './Layout.astro';
-import Nav from '../components/Nav.astro';
-import Prose from '../components/Prose.astro';
-const {title, subtitle, pubDate, author, image} = Astro.props;
+import Layout from "./Layout.astro";
+import Nav from "../components/Nav.astro";
+import Prose from "../components/Prose.astro";
+const { title, subtitle, pubDate, author, image } = Astro.props;
 ---
+
 <Layout header="BLOG" pageTitle={title}>
-        <Nav />
-        <h1 class="text-3xl font-bold mb-2">{title}</h1>
-        <p><em>{subtitle}</em></p>
-        <p>{pubDate && new Date(pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-        {author && <p>Written by: {author}</p>}
-        {image && image.url && <img src={image.url} width="300" alt={image.alt} />}
-        <Prose>
-                <slot />
-        </Prose>
+  <Nav />
+  <h1 class="text-3xl font-bold mb-2">{title}</h1>
+  <p><em>{subtitle}</em></p>
+  <p>
+    {
+      pubDate &&
+        new Date(pubDate).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })
+    }
+  </p>
+  {author && <p>Written by: {author}</p>}
+  {image && image.url && <img src={image.url} width="300" alt={image.alt} />}
+  <Prose>
+    <slot />
+  </Prose>
 </Layout>

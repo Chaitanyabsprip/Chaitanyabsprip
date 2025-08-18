@@ -17,6 +17,8 @@
     "@tailwindcss/typography": "^0.5.16",
     "mdast-util-from-markdown": "^2.0.2",
     "mdast-util-to-string": "^4.0.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-astro": "^0.14.1",
     "reading-time": "^1.5.0"
   }
 }

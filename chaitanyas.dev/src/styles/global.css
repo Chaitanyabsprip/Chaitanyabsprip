@@ -28,3 +28,11 @@
   --color-fg-900: oklch(21.229% 0.06952 283.66);
   --color-fg-950: oklch(16.757% 0.04658 284.11);
 }
+
+.link {
+  @apply underline underline-offset-4 hover:decoration-2;
+}
+
+.nav-item {
+  @apply p-1 underline text-sm sm:text-xl hover:decoration-2 underline-offset-4;
+}

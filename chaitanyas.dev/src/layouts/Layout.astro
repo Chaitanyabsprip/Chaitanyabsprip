@@ -1,42 +1,46 @@
 ---
-import '../styles/global.css'
+import "../styles/global.css";
 import BackgroundTitle from "../components/BackgroundTitle.astro";
 import GithubIcon from "../components/GitHubIcon.astro";
 
 const { header = "", title = "" } = Astro.props as {
-header: string;
-title?: string;
+  header: string;
+  title?: string;
 };
 ---
 
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{title || header}</title>
+  </head>
 
-<head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <title>{title || header}</title>
-</head>
-
-<body class="flex flex-col min-h-screen bg-white dark:bg-surface-950 text-fg-950 dark:text-fg-100 leading-relaxed">
-        {header &&
-        <BackgroundTitle text={header} />}
-        <main class="flex-1 relative z-1 mx-8 sm:mx-36 mt-12 sm:mt-40 max-w-[70ch]">
-                <slot />
-        </main>
-        <div id="toast-root"></div>
-        <footer class="ml-12 mb-5 flex flex-row items-baseline gap-4">
-                <a href="https://github.com/chaitanyasharma/chaitanyas.dev" target="_blank" rel="noopener noreferrer"
-                        aria-label="View source on GitHub" class="inline-block">
-                        <GithubIcon />
-                </a>
-                <span class="text-gray-500">
-                        © {new Date().getFullYear()} Chaitanya Sharma | All rights reserved.
-                </span>
-        </footer>
-</body>
-
+  <body
+    class="flex flex-col min-h-screen bg-white dark:bg-surface-950 text-fg-950 dark:text-fg-100 leading-relaxed"
+  >
+    {header && <BackgroundTitle text={header} />}
+    <main class="flex-1 relative z-1 mx-8 sm:mx-36 mt-12 sm:mt-40 max-w-[70ch]">
+      <slot />
+    </main>
+    <div id="toast-root"></div>
+    <footer class="ml-12 mb-5 flex flex-row items-baseline gap-4">
+      <a
+        href="https://github.com/chaitanyasharma/chaitanyas.dev"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View source on GitHub"
+        class="inline-block"
+      >
+        <GithubIcon />
+      </a>
+      <span class="text-gray-500">
+        © {new Date().getFullYear()} Chaitanya Sharma | All rights reserved.
+      </span>
+    </footer>
+  </body>
 </html>
 
 <!-- <script src="../scripts/keyboard.ts"> </script> -->

@@ -1,20 +1,25 @@
 ---
-import BlogPost from '../components/BlogPost.astro';
-import Layout from '../layouts/Layout.astro';
-import Nav from '../components/Nav.astro';
-import { getCollection } from 'astro:content';
-const allPosts = (await getCollection('blog')).sort((a, b) => new Date(b.data.pubDate).getTime() - new
-Date(a.data.pubDate).getTime());
+import BlogPost from "../components/BlogPost.astro";
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import { getCollection } from "astro:content";
+const allPosts = (await getCollection("blog")).sort(
+  (a, b) =>
+    new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime(),
+);
 ---
 
 <Layout header="BLOG" title="Blog">
-        <Nav />
-        <div class="flex flex-col gap-2">
-                {allPosts.map((post) => post.id ? (
-                <a href={"/blog/" + post.id} class="sm:text-lg">
-                        <BlogPost post={post} />
-                </a>
-                ) : null
-                )}
-        </div>
+  <Nav />
+  <div class="flex flex-col gap-2">
+    {
+      allPosts.map((post) =>
+        post.id ? (
+          <a href={"/blog/" + post.id} class="sm:text-lg">
+            <BlogPost post={post} />
+          </a>
+        ) : null,
+      )
+    }
+  </div>
 </Layout>

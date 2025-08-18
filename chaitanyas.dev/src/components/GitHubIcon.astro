@@ -3,14 +3,14 @@ import GithubMark from "../assets/github-mark.svg";
 import GithubMarkWhite from "../assets/github-mark-white.svg";
 
 interface Props {
-class?: string;
-size?: string;
+  class?: string;
+  size?: string;
 }
 
 const { class: className = "", size = "w-6 h-6" } = Astro.props;
 ---
 
 <span class={`inline-block ${className}`}>
-        <GithubMark class={`block dark:hidden ${size}`} />
-        <GithubMarkWhite class={`hidden dark:block ${size}`} />
+  <GithubMark class={`block dark:hidden ${size}`} />
+  <GithubMarkWhite class={`hidden dark:block ${size}`} />
 </span>

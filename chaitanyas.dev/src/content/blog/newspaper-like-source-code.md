@@ -103,8 +103,8 @@ In the end, perhaps that's the most compelling reason to adopt this style: code 
 
 ---
 
-*Further Reading:*
+_Further Reading:_
 
-- [Knuth, D. E. (1984). "Literate Programming." *The Computer Journal*, 27(2), 97-111.](http://www.literateprogramming.com/knuthweb.pdf)
-- Martin, R. C. (2008). *Clean Code: A Handbook of Agile Software Craftsmanship*. Prentice Hall.
-- [Abelson, H., & Sussman, G. J. (1996). *Structure and Interpretation of Computer Programs*. MIT Press.](https://web.mit.edu/6.001/6.037/sicp.pdf)
+- [Knuth, D. E. (1984). "Literate Programming." _The Computer Journal_, 27(2), 97-111.](http://www.literateprogramming.com/knuthweb.pdf)
+- Martin, R. C. (2008). _Clean Code: A Handbook of Agile Software Craftsmanship_. Prentice Hall.
+- [Abelson, H., & Sussman, G. J. (1996). _Structure and Interpretation of Computer Programs_. MIT Press.](https://web.mit.edu/6.001/6.037/sicp.pdf)
