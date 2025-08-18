@@ -38,7 +38,6 @@ function toggleTheme() {
 }
 
 function setupTheme() {
-  console.log("Setting up theme toggle");
   applyTheme();
   document
     .querySelector(".btn-theme-toggle")

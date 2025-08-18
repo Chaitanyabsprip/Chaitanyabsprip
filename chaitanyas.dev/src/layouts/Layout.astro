@@ -3,9 +3,14 @@ import "../styles/global.css";
 import BackgroundTitle from "../components/BackgroundTitle.astro";
 import GithubIcon from "../components/GitHubIcon.astro";
 
-const { header = "", title = "" } = Astro.props as {
+const {
+  header = "",
+  title = "",
+  nameInTitle,
+} = Astro.props as {
   header: string;
   title?: string;
+  nameInTitle?: boolean;
 };
 ---
 
@@ -15,7 +20,7 @@ const { header = "", title = "" } = Astro.props as {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <title>{title || header}</title>
+    <title>{nameInTitle && "Chaitanya Sharma | "}{title || header}</title>
   </head>
 
   <body
