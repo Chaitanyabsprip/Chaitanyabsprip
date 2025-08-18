@@ -10,7 +10,7 @@ interface Props {
 const { class: className = "", size = "w-6 h-6" } = Astro.props;
 ---
 
-<span class={`inline-block ${className}`}>
-  <GithubMark class={`block dark:hidden ${size}`} />
-  <GithubMarkWhite class={`hidden dark:block ${size}`} />
+<span class={`inline-block ${className}`} role="img" aria-label="GitHub">
+  <GithubMark class={`block dark:hidden ${size}`} aria-hidden="true" />
+  <GithubMarkWhite class={`hidden dark:block ${size}`} aria-hidden="true" />
 </span>

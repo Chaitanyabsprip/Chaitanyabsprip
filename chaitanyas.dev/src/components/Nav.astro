@@ -1,11 +1,40 @@
-<nav class="flex flex-col sm:flex-row items-baseline sm:gap-4 mb-8 sm:mb-12">
-  <h1 class="btn-theme-toggle font-semibold text-4xl sm:text-5xl">
+<nav
+  class="flex flex-col sm:flex-row items-baseline sm:gap-4 mb-8 sm:mb-12"
+  aria-label="Main navigation"
+>
+  <h1
+    class="btn-theme-toggle font-semibold text-4xl sm:text-5xl"
+    tabindex="0"
+    role="button"
+    aria-label="Chaitanya Sharma, click to toggle theme"
+  >
     Chaitanya Sharma
   </h1>
-  <div class="flex flex-row gap-2">
-    <a class="nav-item" href="/">Home</a>
-    <a class="nav-item" href="/about/">About</a>
-    <a class="nav-item" href="/blog/">Blog</a>
+  <div class="flex flex-row gap-2" role="menubar">
+    <a
+      class="nav-item"
+      href="/"
+      role="menuitem"
+      aria-current={Astro.url.pathname === "/" ? "page" : undefined}
+    >
+      Home
+    </a>
+    <a
+      class="nav-item"
+      href="/about/"
+      role="menuitem"
+      aria-current={Astro.url.pathname === "/about/" ? "page" : undefined}
+    >
+      About
+    </a>
+    <a
+      class="nav-item"
+      href="/blog/"
+      role="menuitem"
+      aria-current={Astro.url.pathname === "/blog/" ? "page" : undefined}
+    >
+      Blog
+    </a>
   </div>
 </nav>
 <script src="../scripts/theme_toggle.ts"></script>

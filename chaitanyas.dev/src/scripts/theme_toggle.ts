@@ -39,9 +39,15 @@ function toggleTheme() {
 
 function setupTheme() {
   applyTheme();
-  document
-    .querySelector(".btn-theme-toggle")
-    ?.addEventListener("click", toggleTheme);
+  const themeToggle = document.querySelector(".btn-theme-toggle");
+  themeToggle?.addEventListener("click", toggleTheme);
+  themeToggle?.addEventListener("keydown", (event: Event) => {
+    const keyEvent = event as KeyboardEvent;
+    if (keyEvent.key === "Enter" || keyEvent.key === " ") {
+      event.preventDefault();
+      toggleTheme();
+    }
+  });
   window
     .matchMedia("(prefers-color-scheme: dark)")
     ?.addEventListener("change", () => {
