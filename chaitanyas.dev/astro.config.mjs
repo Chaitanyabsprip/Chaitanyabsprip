@@ -9,6 +9,14 @@ import playformCompress from "@playform/compress";
 // https://astro.build/config
 export default defineConfig({
   site: "https://chaitanyas.dev",
+  markdown: {
+    shikiConfig: {
+      themes: {
+        light: "material-theme-lighter",
+        dark: "material-theme-ocean",
+      },
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },
