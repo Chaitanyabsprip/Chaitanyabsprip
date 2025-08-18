@@ -1,0 +1,15 @@
+---
+import Email from "../assets/email.png";
+import { Image } from "astro:assets";
+
+interface Props {
+  class?: string;
+  size?: string;
+}
+
+const { class: className = "", size = "w-6 h-6" } = Astro.props;
+---
+
+<span class={`inline-block ${className} ${size}`}>
+  <Image src={Email} alt="email icon" />
+</span>

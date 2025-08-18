@@ -1,12 +1,13 @@
 ---
 const { name, link, label } = Astro.props as {
-  name: string;
+  name: any;
   link: string;
   label: string;
 };
 ---
 
-<div>
-  <span class="text-md sm:text-xl">{name}</span>
+<div class="flex flex-row items-center gap-4">
+  {name && <span class="text-md sm:text-xl">{name}</span>}
+  <slot />
   <a class="text-sm sm:text-md link" href={link}>{label}</a>
 </div>

@@ -4,6 +4,9 @@ import Contact from "../components/Contact.astro";
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 import heroGIF from "../assets/futuristic-city.gif";
+import LinkedInIcon from "../components/LinkedInIcon.astro";
+import GitHubIcon from "../components/GitHubIcon.astro";
+import EmailIcon from "../components/EmailIcon.astro";
 ---
 
 <Layout header="HOME" title="Home" nameInTitle>
@@ -14,20 +17,16 @@ import heroGIF from "../assets/futuristic-city.gif";
     class="rounded-2xl mb-16 dark:border dark:border-gray-800 bg-gray-100 dark:bg-gray-950"
   />
   <div class="flex flex-col gap-2">
+    <Contact label="Chaitanyabsprip" link="https://github.com/Chaitanyabsprip"
+      ><GitHubIcon size="w-5 h-5" />
+    </Contact>
     <Contact
-      name="GitHub"
-      label="Chaitanyabsprip"
-      link="https://github.com/Chaitanyabsprip"
-    />
-    <Contact
-      name="LinkedIn"
       label="@chaitanyabsprip"
       link="https://www.linkedin.com/in/chaitanyabsprip"
-    />
-    <Contact
-      name="Email"
-      label="hello@chaitanyas.dev"
-      link="mailto:hello@chaitanyas.dev"
-    />
+      ><LinkedInIcon size="w-5 h-5" />
+    </Contact>
+    <Contact label="hello@chaitanyas.dev" link="mailto:hello@chaitanyas.dev"
+      ><EmailIcon size="w-5 h-5" />
+    </Contact>
   </div>
 </Layout>
