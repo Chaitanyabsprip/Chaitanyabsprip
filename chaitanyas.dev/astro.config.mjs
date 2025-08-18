@@ -8,6 +8,8 @@ import playformCompress from "@playform/compress";
 
 import robotsTxt from "astro-robots-txt";
 
+import compressor from "astro-compressor";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://chaitanyas.dev",
@@ -34,5 +36,6 @@ export default defineConfig({
     // }),
     playformCompress(),
     robotsTxt(),
+    compressor(),
   ],
 });
