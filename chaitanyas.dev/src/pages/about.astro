@@ -5,63 +5,73 @@ import Nav from "../components/Nav.astro";
 
 <Layout header="ABOUT" title="About" nameInTitle>
   <Nav />
-  <div class="text-justify text-sm sm:text-lg">
-    <p>
+  <div class="text-justify text-sm sm:text-lg space-y-4">
+    <p class="text-xl">
       I'm Chaitanya, a software engineer who believes in the art of
       optimization. My journey in tech has been driven by a simple question:
       "How can we make this better?"
     </p>
-    <br />
-    <p>
-      As a fullstack engineer, I work across the entire development spectrum,
-      from crafting efficient backend systems in Go, TypeScript, and Python to
-      building fluid mobile experiences with Flutter. But what truly excites me
-      is the architecture behind these systems, the invisible patterns that
-      determine how well software scales, performs, and evolves.
-    </p>
-    <br />
-    <p>
-      My obsession with optimization extends beyond just making things faster.
-      It's about finding the most elegant solution to complex problems. In my
-      professional work, this philosophy has led me to successfully optimize
-      enterprise chat systems and architect high-performance notification
-      delivery systems, consistently delivering substantial improvements in
-      system performance.
-    </p>
-    <br />
-    <p>
-      I'm a firm believer in the terminal's power. In a world of flashy GUIs, I
-      find beauty in the constraint of the command line. It's where I spend most
-      of my time, from coding in Neovim to interacting with AI models. This
-      isn't just about personal preference, it's about the fundamental
-      efficiency of text-based interfaces. When you strip away the pixels,
-      you're forced to think deeply about user experience in purely functional
-      terms.
-    </p>
-    <br />
-    <p>
-      This love for terminal-based workflows naturally led me into the world of
-      developer tooling. Over time, I've built an ecosystem of tools that make
-      development more efficient, from Neovim plugins that streamline code
-      actions to a comprehensive suite of shell scripts that automate repetitive
-      tasks.
-    </p>
-    <br />
-    <p>
-      Beyond coding, I'm drawn to the philosophical aspects of software
-      development. How should we organize code? What makes an interface
-      intuitive? When is optimization premature? These questions fascinate me,
-      and I explore them through technical writing and open-source
-      contributions. I believe in sharing knowledge and learning publicly,
-      there's something powerful about thinking out loud and being open to
-      better ideas.
-    </p>
-    <br />
-    <p>
-      Whether I'm architecting backend systems, crafting mobile experiences, or
-      building developer tools, my goal remains consistent: create software
-      that's not just functional, but thoughtfully designed and efficiently
-      implemented.
-    </p>
+
+    <div class="my-4">
+      <h2 class="text-2xl mb-2">Work & Impact</h2>
+      <p class="mb-2">
+        As a fullstack engineer, I work across the entire development spectrum,
+        from crafting efficient backend systems in Go, TypeScript, and Python to
+        building fluid mobile experiences with Flutter. But what truly excites
+        me is the architecture behind these systems, the invisible patterns that
+        determine how well software scales, performs, and evolves.
+      </p>
+      <p class="mb-2">
+        My obsession with optimization extends beyond just making things faster.
+        It's about finding the most elegant solution to complex problems. In my
+        professional work, this philosophy has led me to successfully optimize
+        enterprise chat systems and architect high-performance notification
+        delivery systems, consistently delivering performance gains.
+      </p>
+    </div>
+
+    <div class="my-4">
+      <h2 class="text-2xl mb-4">What drives me</h2>
+      <ul class="list-disc pl-8">
+        <li>Create experiences that serve users and empower developers</li>
+        <li>Build efficient systems that scale and perform</li>
+        <li>Automate processes that make development more enjoyable</li>
+        <li>Explore software architecture and design patterns</li>
+      </ul>
+    </div>
+
+    <div class="my-4">
+      <h2 class="text-2xl mb-4">Philosophy</h2>
+      <p class="mb-2">
+        I'm a firm believer in the terminal's power. In a world of flashy GUIs,
+        I find beauty in the constraint of the command line. It's where I spend
+        most of my time, from coding in Neovim to interacting with AI models.
+        This isn't just about personal preference - it's about the fundamental
+        efficiency of text-based interfaces. When you strip away the pixels,
+        you're forced to think deeply about user experience in functional terms.
+      </p>
+      <p class="mb-2">
+        This love for terminal-based workflows naturally led me into the world
+        of developer tooling. Over time, I've built an ecosystem of tools that
+        make development more efficient - from Neovim plugins that streamline
+        code actions to a comprehensive suite of shell scripts that automate
+        repetitive tasks.
+      </p>
+      <p class="mb-2">
+        Beyond coding, I'm drawn to the philosophical aspects of software
+        development. How should we organize code? What makes an interface
+        intuitive? When is optimization premature? These questions fascinate me,
+        and I explore them through technical writing and open-source
+        contributions. I believe in sharing knowledge and learning publicly -
+        there's something powerful about thinking out loud and being open to
+        better ideas.
+      </p>
+      <p>
+        Whether I'm architecting backend systems, crafting mobile experiences,
+        or building developer tools, my goal remains consistent: create software
+        that's not just functional, but thoughtfully designed and efficiently
+        implemented.
+      </p>
+    </div>
   </div>
 </Layout>
