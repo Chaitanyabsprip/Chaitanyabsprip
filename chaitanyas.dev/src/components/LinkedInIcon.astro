@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import InBugBlack from "../assets/in-bug-black.png";
 import InBugWhite from "../assets/in-bug-white.png";
 import LIInBug from "../assets/li-in-bug.png";
@@ -14,12 +14,14 @@ const { class: className = "", size = "w-6 h-6", blue = false } = Astro.props;
 ---
 
 <span class={`inline-block ${className}`}>
-  <Image
+  <Picture
+    formats={["avif", "webp"]}
     class={`block dark:hidden ${size}`}
     src={blue ? LIInBug : InBugBlack}
     alt="linkedIn logo black"
   />
-  <Image
+  <Picture
+    formats={["avif", "webp"]}
     class={`hidden dark:block ${size}`}
     src={blue ? LIInBug : InBugWhite}
     alt="linkedIn logo white"
